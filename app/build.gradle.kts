@@ -1,6 +1,9 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+
+    id("kotlin-kapt")
+    id("com.google.dagger.hilt.android")
 }
 
 android {
@@ -73,5 +76,12 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
 
+    implementation(libs.hilt.android)
+    kapt(libs.hilt.android.compiler)
 
+    implementation(libs.androidx.hilt.navigation.compose)
+}
+
+kapt {
+    correctErrorTypes = true
 }

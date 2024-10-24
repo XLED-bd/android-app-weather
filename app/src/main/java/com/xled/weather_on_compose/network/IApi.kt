@@ -1,5 +1,6 @@
-package com.xled.weather_on_compose
+package com.xled.weather_on_compose.network
 
+import com.xled.weather_on_compose.models.Prediction
 import retrofit2.http.GET
 
 interface iApi {

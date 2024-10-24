@@ -1,4 +1,4 @@
-package com.xled.weather_on_compose
+package com.xled.weather_on_compose.models
 
 data class Prediction(
     val latitude: Double,

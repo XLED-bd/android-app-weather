@@ -1,4 +1,4 @@
-package com.xled.weather_on_compose
+package com.xled.weather_on_compose.network
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
